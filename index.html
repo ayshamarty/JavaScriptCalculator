@@ -1,0 +1,29 @@
+<html>
+<link rel="stylesheet" href="index.css">
+<body>
+
+    <p> Simple Calculator </p>
+
+    <script src = "index.js">     
+        </script>  
+
+
+    <form>
+
+        First Number <input type="number" id="num1" class="inputValue"><br>
+        Second Number <input type="number" id="num2" class="inputValue"><br>
+
+        <input type="button" onclick="calculator().add()" value="+" class="calcButton">  </input>
+        <input type="button" onclick="calculator().subtract()" value="-" class="calcButton">  </input>
+        <input type="button" onclick="calculator().multiply()" value="x" class="calcButton">  </input> 
+        <input type="button" onclick="calculator().divide()"value="%" class="calcButton">  </input> 
+        <input type="button" onclick="power(num1, num2)"value="^" class="calcButton">  </input> 
+
+        </form>
+    <p>Result = 
+        <span id="result">
+            </span>
+        </p>
+</body>
+
+</html>

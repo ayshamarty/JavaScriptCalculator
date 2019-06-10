@@ -1,0 +1,13 @@
+body {
+  background-color: cyan;
+}
+
+.calcButton {
+    background-color: lightgreen;
+    color: purple;
+}
+
+.inputValue {
+    background-color: green;
+    color: white;
+}
