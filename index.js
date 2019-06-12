@@ -1,3 +1,6 @@
+
+
+
 function calculator() {
     let a = parseInt(num1.value);
     let b = parseInt(num2.value);
@@ -18,7 +21,7 @@ function calculator() {
         divide: function () {
             let res = a / b;
             result.innerText = res;
-        }
+        },
     };
 
 
