@@ -52,6 +52,10 @@ title{
     background-color: lightslategrey;
 }
 
+.navbar {
+    text-align: center;
+}
+
 #result {
     color: darkgrey;;
     margin-top: 20;

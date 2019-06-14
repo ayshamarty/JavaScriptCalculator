@@ -3,10 +3,36 @@
 
 <body>
 
-    </link>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+    <title class="navbar navbar-text"> Simple Calculator </title>
+
+    <section class="container">
+        <form>
+
+            First Number <input id="num1" type="number" class="inputValue rounded-lg"><br>
+            Second Number <input id="num2" type="number" class="inputValue rounded-lg"><br>
+            <div class="col-12 top">
+                <input type="button" onclick="goToResult('add')" value="+" class="btn btn-info"> </input>
+                <input type="button" onclick="goToResult('subtract')" value="-" class="btn btn-info"> </input>
+            </div>
+            <div class="col-12">
+                <input type="button" onclick="goToResult('multiply')" value="x" class="btn btn-info"> </input>
+
+            </div>
+            <div class="bottom">
+                <input  type="button" onclick="goToResult('divide')" value="%" class="btn btn-info"> </input>
+                <input type="button" onclick="goToResult()" value="^" class="btn btn-info"> </input>
+            </div>
+        </form>
+
+
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -17,36 +43,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
-
-    <title class="navbar navbar-text"> Simple Calculator </title>
-
-    <section class="container">
-        <form>
-
-            First Number <input id="num1" type="number" class="inputValue rounded-lg"><br>
-            Second Number <input id="num2" type="number" class="inputValue rounded-lg"><br>
-            <div class="col-12 top">
-                <input type="button" onclick="calculator().add()" value="+" class="btn btn-info"> </input>
-                <input type="button" onclick="calculator().subtract()" value="-" class="btn btn-info"> </input>
-            </div>
-            <div class="col-12">
-                <input type="button" onclick="calculator().multiply()" value="x" class="btn btn-info"> </input>
-
-            </div>
-            <div class="bottom">
-                <input type="button" onclick="calculator().divide()" value="%" class="btn btn-info"> </input>
-                <input type="button" onclick="power(num1, num2)" value="^" class="btn btn-info"> </input>
-            </div>
-
-            <div>
-        </form>
-        <p2 class="navbar navbar-text rounded-pill">Result =
-            <span id="result">
-            </span>
-        </p2>
-        </div>
-
-    </section>
 </body>
 
 

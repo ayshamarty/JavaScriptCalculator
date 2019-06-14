@@ -1,37 +1,16 @@
 
 
-
-function calculator() {
-    let a = parseInt(num1.value);
-    let b = parseInt(num2.value);
-
-    return {
-        add: function () {
-            let res = a + b;
-            result.innerText = res;
-        },
-        subtract: function () {
-            let res = a - b;
-            result.innerText = res;
-        },
-        multiply: function () {
-            let res = a * b;
-            result.innerText = res;
-        },
-        divide: function () {
-            let res = a / b;
-            result.innerText = res;
-        },
-    };
-
-
-}
-
-
 function power(a, b){
     let res = Math.pow(parseInt(a.value), parseInt(b.value));
     result.innerText = res;
 }
+
+function goToResult(operation){
+    sessionStorage.setItem('op', operation);
+    sessionStorage.setItem('first', num1.value);
+    sessionStorage.setItem('second', num2.value);
+    window.location.href = "resultPage.html";
+  } 
 
 
 // function add(a, b){
